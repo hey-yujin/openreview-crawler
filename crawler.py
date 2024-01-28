@@ -12,6 +12,7 @@ def get_args():
     parser.add_argument('--conference', choices=['ICLR', 'NeurIPS'])
     parser.add_argument('--year', choices=[2023, 2424])
     parser.add_argument('--type', default='oral')
+    parser.add_argument('--path', default=None)
     parser.add_argument('--save_filename', default='papers.tsv')
     return parser.parse_args()
 
