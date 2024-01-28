@@ -1,3 +1,4 @@
+# Many lines are borrowed from https://github.com/fedebotu/ICLR2022-OpenReviewData
 import argparse
 import time
 from tqdm import tqdm
