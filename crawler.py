@@ -78,6 +78,7 @@ if __name__ == "__main__":
         with open(save_filename, "a", encoding="utf8") as f:
             papers = driver.find_elements(By.XPATH, f"//*[@id='accept-{conference_type}']/div/div/ul/li")
             for idx, paper in enumerate(papers):
+                # Get a paper title and pdf link
                 title_link = paper.find_element(By.TAG_NAME, "a")
                 title = title_link.text.strip()
                 link = title_link.get_attribute("href").strip()
